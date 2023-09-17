@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ApiController;
+// use App\Http\Controllers\ApiController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('api/v1/users', [ApiController::class, 'get_all_users'])->name('api.get_all_users');
+// Route::get('api/v1/users', [ApiController::class, 'get_all_users'])->name('api.get_all_users');
