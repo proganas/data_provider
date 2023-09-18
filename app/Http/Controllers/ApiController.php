@@ -5,8 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\DataProvider;
 
-use function PHPUnit\Framework\isEmpty;
-
 class ApiController extends Controller
 {
     public function index(Request $request)
