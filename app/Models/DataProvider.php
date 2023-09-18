@@ -43,7 +43,7 @@ class DataProvider
         if (!empty($conditions['balanceMin']) && !empty($conditions['balanceMax'])) {
             if ($this->provider == "DataProviderX") {
                 $filteredData = $filteredData->whereBetween('parentAmount', [$conditions['balanceMin'], $conditions['balanceMax']]);
-            } elseif($this->provider == "DataProviderY") {
+            } elseif ($this->provider == "DataProviderY") {
                 $filteredData = $filteredData->whereBetween('balance', [$conditions['balanceMin'], $conditions['balanceMax']]);
             }
         }
